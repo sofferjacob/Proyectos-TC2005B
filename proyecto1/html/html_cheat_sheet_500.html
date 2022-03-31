@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+</head>
+
+<body>
+    <h1>Header 1</h1>
+    <p>Hello, world</p>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <div>
+        <h3>Dentro del div</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat alias quo at minus asperiores, autem
+            assumenda veritatis quisquam dignissimos placeat amet et. Eveniet voluptates placeat vitae optio, aut
+            nesciunt!</p>
+    </div>
+    <div>
+        <h2>Tags semanticos</h2>
+        <header>
+            <h3>Dentro del header</h3>
+            <p>El tag <code>header</code> se usa para el contenido de introducción de una sección, usualmente también
+                conteniendo elementos de navegación.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat alias quo at minus asperiores,
+                autem
+                assumenda veritatis quisquam dignissimos placeat amet et. Eveniet voluptates placeat vitae optio, aut
+                nesciunt!</p>
+        </header>
+        <span></span>
+        <article></article>
+    </div>
+    <div>
+        <h2>Listas</h2>
+        <h3>Lista sin orden</h3>
+        <ul>
+            <li>Para una lista sin orden se usa el elemento <code>ul</code></li>
+            <l1>Cada miembro de la lista usa el elemento <code>li</code></l1>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <ol>
+            <li>Para una lista ordenada se usa el elemento <code>ol</code></li>
+            <li>Para cada miembro de la lista se usa elemento <code>li</code></li>
+        </ol>
+    </div>
+    <div>
+        <h3>Tablas</h3>
+        <p>Las tablas (<code>table</code>) estan formadas por el encabezado de la tabla (<code>th</code>), cuerpo
+            (<code>tbody</code>), filas (<code>tr</code>) y celdas (<code>td</code>)</p>
+        <table>
+            <th>
+                <tr>
+                    <td>Tecnología</td>
+                    <td>Uso</td>
+                </tr>
+            </th>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Esqueleto del documento</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Diseño del documento</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Interactividad del documento</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3>Imagenes</h3>
+        <p>Para insertar una imagen se usa el tag <code>img</code>. Este tag tiene diferentes atributos, entre ellos</p>
+        <ul>
+            <li><code>src</code>: Path de la imagen, ya sea un URL o un path relativo a un archivo del proyecto.</li>
+            <li><code>alt</code>: Atributo de accesibilidad usado para describir el contenido de la imagen para aquellos
+                con screen readers o conexiones a internet insuficientes para cargar la imagen.</li>
+            <li><code>width</code>: Anchura de la imagen en pixeles.</li>
+        </ul>
+        <img src="../images/clouds.jpg" width="200" alt="clouds">
+        <img src="https://picsum.photos/200" width="200" style="display: block;">
+    </div>
+    <div>
+        <h3>Links</h3>
+        <p>Para crear links se usa el elemento <code>a</code> junto con el atributo <code>href</code> que indica la
+            dirección a la que lleva el link (puede ser path relativo a un archivo del proyecto/servidor) y el atributo
+            <code>target</code> el cual se usa para especificar como abrirlo. Por ejemplo, usando <code>_blank</code> se
+            abrirá en una pestaña nueva.
+        </p>
+        <a href="html_link.html">Ve a la página del link!</a>
+    </div>
+    <div>
+        <h3>Formas</h3>
+        <p>Se usa para recolectar información del usuario y se crean usando el elemento <code>form</code>. Se pueden
+            anidar los siguientes elementos:</p>
+        <ul>
+            <li><code>textarea</code>: Caja de texto</li>
+            <li><code>input</code>: Campo de texto. Se puede modificar el tipo de entrada usando el atributo
+                <code>type</code>.</li>
+            <li><code>button</code>: Botones. Usar <code>type="submit"</code> para un boton que envie la forma.</li>
+        </ul>
+        <p>En las entradas de texto se puede usar el atributo <code>placeholder</code> para indicar una instrucción. Se
+            pueden añadir etiquetas usando <code>label</code>.</p>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <br>
+            <input type="email" placeholder="Email">
+            <br>
+            <input type="number" placholder="Telefono">
+            <br>
+            <input type="password" placeholder="Contraseña">
+            <br>
+            <label>Comentarios</label>
+            <textarea></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+<!-- <style>
+    html {
+        color: yellow;
+        background-color: red;
+    }
+</style> -->
+
+</html>
