@@ -10,22 +10,27 @@
 
 <body>
     <h1>Header 1</h1>
-    <p>Hello, world</p>
+    <p>Hello, world! Soy un parrafo, me pueden crear usando el tag <code>p</code>. Se pueden crear encabezados (headers)
+        usando los tags <code>h1</code>...<code>h6</code>.</p>
     <h2>Header 2</h2>
     <h3>Header 3</h3>
     <h4>Header 4</h4>
     <h5>Header 5</h5>
     <h6>Header 6</h6>
     <div>
-        <h3>Dentro del div</h3>
+        <h3>Dentro del <code>div</code></h3>
+        <p>El <code>div</code> es un contenedor generico usado para agrupar elementos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat alias quo at minus asperiores, autem
             assumenda veritatis quisquam dignissimos placeat amet et. Eveniet voluptates placeat vitae optio, aut
             nesciunt!</p>
     </div>
     <div>
         <h2>Tags semanticos</h2>
+        <p>En general, es una buena idea usar tags semanticos en una página web ya que le dan sentido al documento,
+            tanto para los que trabajan en este como para motores de busqueda o screen readers. Además de esto pueden
+            ser utiles para agrupar elementos y darles estilos usando CSS.</p>
         <header>
-            <h3>Dentro del header</h3>
+            <h3>Dentro del <code>header</code></h3>
             <p>El tag <code>header</code> se usa para el contenido de introducción de una sección, usualmente también
                 conteniendo elementos de navegación.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellat alias quo at minus asperiores,
@@ -33,8 +38,16 @@
                 assumenda veritatis quisquam dignissimos placeat amet et. Eveniet voluptates placeat vitae optio, aut
                 nesciunt!</p>
         </header>
-        <span></span>
-        <article></article>
+        <span>
+            <h3>Dentro del <code>span</code></h3>
+            <p>El tag <code>span</code> es un contenedor usado para agrupar elementos en una página para dar estilos o
+                porque comparten atributos. </p>
+        </span>
+        <article>
+            <h3>Dentro del <code>article</code></h3>
+            <p>El <code>article</code> es un tag usado para representar una composición dentro de una página, como una
+                noticia, blog post, etc.</p>
+        </article>
     </div>
     <div>
         <h2>Listas</h2>
@@ -105,7 +118,8 @@
         <ul>
             <li><code>textarea</code>: Caja de texto</li>
             <li><code>input</code>: Campo de texto. Se puede modificar el tipo de entrada usando el atributo
-                <code>type</code>.</li>
+                <code>type</code>.
+            </li>
             <li><code>button</code>: Botones. Usar <code>type="submit"</code> para un boton que envie la forma.</li>
         </ul>
         <p>En las entradas de texto se puede usar el atributo <code>placeholder</code> para indicar una instrucción. Se
