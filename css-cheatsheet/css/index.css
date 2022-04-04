@@ -1,0 +1,90 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+code {
+    font-family: monospace;
+}
+
+div {
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+#borders {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.border-mixed {
+    border-top: 2px solid red;
+    border-right: 5px dashed green;
+    border-bottom: 5px groove orange;
+}
+
+#bc-image {
+    background-image: url("https://picsum.photos/300");
+    filter: blur(8px);
+    height: 500px;
+}
+
+#bc-image-foreground {
+    position: relative;
+    bottom: 540px;
+    color: rgb(33, 33, 167);
+    margin-bottom: -540px;
+}
+
+
+#fonts {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#fonts ul {
+    list-style: square;
+}
+
+#other {
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.rectangle {
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.visible {
+    overflow: visible;
+    background-color:aliceblue;
+    height: 20px;
+    width: 20px;
+}
+
+.hidden {
+    overflow: hidden;
+    background-color:aliceblue;
+    height: 20px;
+    width: 20px;
+}
+
+.scroll {
+    overflow: scroll;
+    background-color:aliceblue;
+    height: 80px;
+    width: 80px;
+}

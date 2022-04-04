@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>CSS Cheat Sheet</title>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Cheat Sheet</h1>
+        <h5>Jacobo Soffer A01028653</h6>
+    </header>
+    <p>El CSS se usa para dar estilo a documentos HTML. Se usan distintos tipos de selectores para seleccionar elementos
+        y darles estilo. Por ejemplo, en este caso se uso un selector global <code>*</code> para cambiar la fuente en
+        todo el documento usando la propiedad <code>font-family</code> y se selecciono el elemento <code>header</code>
+        usando un selector de elemento para alinear sus contenidos como una fila.</p>
+    <div id="borders">
+        <h3>Borders</h3>
+        <p>Los elementos también se pueden seleccionar usando su id, poniendo un # antes de su id en el archivo CSS. Se
+            le puede dar un border a un elemento usando la propiedad <code>border</code> a la cual primero se especifica
+            el grosor del border, el estilo de border (<code>solid, dashed, none, grooved</code>, etc). Se le puede
+            asignar una curvatura al border usando la propiedad <code>border-radius</code> a la cual se le asigna un
+            valor númerico de su curvatura.</p>
+        <p class="border-mixed">A los elementos tambien se les puede dividir la border por lado del elemento usando las
+            propiedades <code>border-left, border-right, border-bottom, border-top</code> con el mismo formato de
+            valores. Otra forma de seleccionar elementos en CSS es por medio de clases, las cuales se asignan en los
+            elementos html con el atributo <code>class</code> y se pone un punto (.) antes del selector en el archivo
+            CSS para indicar que es un selector de clase.</p>
+        <h3>Padding</h3>
+        <p>Se puede usar la propiedad <code>padding</code> para crear espacio dentro de un elemento. Por ejemplo, en
+            este caso se uso la propiedad con un valor de <code>15px</code> para que los elementos anidados en el
+            <code>div</code> no estuvieran pegados al border azul. Esta propiedad puede recibir uno, dos o 4 valores. En
+            el caso de que reciba uno se usa para el padding en todas las direcciones. En caso de que reciba dos el
+            primero aplica para arriba y abajo y el segundo para los lados. En caso de que reciba 4 se usan para arriba,
+            derecha, abajo, izquiera respectivamente.
+        </p>
+        <h3>Margen</h3>
+        <p>Se usa la propiedad <code>margin</code> para indicar espacio entre elementos. Por ejemplo, en este caso se le
+            aplica al elemento <code>div</code> para que exista una separación entre las secciones de esta página.</p>
+    </div>
+    <div id="bc-image">
+
+    </div>
+    <div id="bc-image-foreground">
+        <h3>Background image</h3>
+        <p> Se puede usar la propiedad <code>background-image</code> para usar una imagen como fondo de un elemento. Se
+            le pasa el path o URL de la imagen usando la función <code>url</code></p>
+        <h3>Color</h3>
+        <p>Se puede usar la propiedad <code>color</code> para cambiar el color del foreground, usando colores
+            predeterminados, RGB o hexadecimales.</p>
+        <h3>Filter</h3>
+        <p>Se puede usar la propiedad <code>filter</code> con diferentes funciones como
+            <code>blur, contrast, grayscale</code> para modificar la apariencia de una imagen.
+        </p>
+        <h3>Posicionamiento</h3>
+        <p>Se puede usar la propiedad <code>position</code> para indicar como se debe acomodar un elemento en el
+            documento. Se le pueden asignar los siguientes valores:</p>
+        <ul>
+            <li><code>static</code>: Posicionamiento normal en HTML.</li>
+            <li><code>relative</code>: Posicionamiento relativo a su posición normal.</li>
+            <li><code>fixed</code>: Se posiciona relativo al viewport por lo que mantiene su posición aunque el usuario
+                mueva la página.</li>
+            <li><code>absolute</code>: Se posiciona relativo al primer ancestro posicionado.</li>
+        </ul>
+    </div>
+    <div id="fonts">
+        <h3>Fuentes y Texto</h3>
+        <p>Como se menciono previamente se puede usar la propiedad <code>font-family</code> para cambiar la fuente usada
+            en el documento. Las siguientes propiedades también se pueden usar para dar estilo a texto:</p>
+        <ul>
+            <li style="font-weight: bold;"><code>font-weight</code>: Se usa para especificar el peso o boldness de la
+                fuente.</li>
+            <li stye="font-style: italic;"><code>font-style</code>: Se usa para indicar el estilo de la fuente con
+                valores <code>normal, italics, oblique</code>.</li>
+            <li><code>font</code>: Se usa como shorthand o combinación de las propiedades anteriores, pudiendo
+                especificar <code>font-style, font-variant, font-weight, font-size, font-family</code>.</li>
+        </ul>
+        <h3>Estilo de listas</h3>
+        <p>Se puede usar la propiedad <code>list-style</code> para especificar el tipo de bullets a usar (ej.
+            <code>bullets, square</code>), la posición de la lista (<code>inside, outside</code>) o una imagen para los
+            marcadores de elementos. Estas propiedades se pueden especificar en cualquier orden.
+        </p>
+    </div>
+    <div id="other">
+        <h3>Otras propiedades</h3>
+        <p>Existen muchas otras propiedades que se pueden usar para dar estilo a un documento.</p>
+        <h4>Tamaño</h4>
+        <p>Se le puede dar tamaño a elementos usando las propiedades <code>height</code> y <code>width</code>. Por
+            ejemplo, a continuación se creo un rectangulo a partir de un div con las propiedades
+            <code>height: 200px; width: 300px;</code>:
+        </p>
+        <div class="rectangle"></div>
+        <h4>Display</h4>
+        <p>La propiedad <code>display</code> se puede usar para indicar como se debe tratar un elemento en el documento
+            a la hora de mostrarlo (<code>inline, block, flex, grid</code>). Por ejemplo, en la siguiente forma se usa
+            la propiedad <code>display: block;</code> para mostrar cada elemento en una línea separada:</p>
+        <form>
+            <label>Nombre:</label>
+            <input type="text">
+            <input type="submit">
+        </form>
+        <h4>Overflow</h4>
+        <p>Se puede usar la propiedad <code>overflow</code> para indicar el comportamiento del contenido de un elemento
+            cuando el tamaño del contenido lo excede. Puede tener los siguientes valores:</p>
+        <ul>
+            <li><code>visible</code>: Comportamiento predeterminado, el contenido no se corta.</li>
+            <li><code>hidden</code>: Lo que no cabe es cortado y no se muestra.</li>
+            <li><code>scroll</code>: El contenido se corta y se añaden "scroll bars" para ver el resto.</li>
+            <li><code>auto:</code>: Similar a <code>scroll</code> pero solo se añaden "scroll bars cuadno es necesario.
+            </li>
+        </ul>
+        <p>Ejemplo <code>visible</code>:</p>
+        <div class="visible">
+            <p>hello</p>
+        </div>
+        <p>Ejemplo <code>hidden</code>:</p>
+        <div class="hidden">
+            hello
+        </div>
+        <p>Ejemplo <code>scroll</code>:</p>
+        <div class="scroll">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio non neque exercitationem dolores,
+                distinctio eligendi tempore eveniet facilis laborum tempora eius est, fugiat voluptatem iusto molestiae
+                necessitatibus illo ullam.</p>
+        </div>
+    </div>
+    <h3>Referencia:</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/css">https://www.w3schools.com/css</a></li>
+        <li><a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a>
+        </li>
+    </ul>
+</body>
+
+</html>
