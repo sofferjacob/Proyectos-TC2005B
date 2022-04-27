@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(8, 1, 44);
+    height: 95vh;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: .6fr 3fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.orange {
+    background-color: orangered;
+}
+
+.yellow {
+    padding: 8px;
+    background-color: yellow;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.blue {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.purple {
+    background-color: blueviolet;
+}
+
+.cyan {
+    background-color: cyan;
+}

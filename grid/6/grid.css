@@ -1,0 +1,69 @@
+body {
+    height: 95vh;
+    background-color: rgb(8, 1, 44);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#red {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#white {
+    background-color: white;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#cyan {
+    background-color: cyan;
+    grid-row-start: 3;
+}
+
+#purple {
+    background-color: purple;
+    grid-row-start: 3;
+}
+
+#red2 {
+    background-color: brown;
+    grid-row-start: 4;
+}
+
+#green2 {
+    background-color: aquamarine;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#orange2 {
+    background-color: orangered;
+    grid-row-start: 5;
+}
