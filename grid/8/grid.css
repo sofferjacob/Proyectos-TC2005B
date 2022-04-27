@@ -1,8 +1,20 @@
 body {
-    background-color: rgb(8, 1 , 44);
+    background-color: rgb(8, 1, 44);
     height: 95vh;
     display: grid;
+    gap: 10px;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(5, 1fr);
 }
 
+#big {
+    background-color: orange;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+#bigger {
+    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
