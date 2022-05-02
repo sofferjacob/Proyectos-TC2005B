@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 0.8fr 4fr 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(43, 63, 74);
+    display: flex;
+    color: white;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-left: 3em;
+}
+
+nav {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: baseline;
+    background-color: rgb(176, 123, 71);
+    color: white;
+}
+
+#main h1 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    text-align: center;
+}
+
+#main p {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+button {
+    background-color: rgb(176, 123, 71);
+    color: white;
+    font-weight: 500;
+    padding: 1px 8px;
+    border: 0px;
+}
+
+form {
+    margin-left: 4em;
+}
+
+#newsletter {
+    background-color: rgb(43, 63, 74);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stack {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#stack p {
+    text-align: center;
+}
+
+img {
+    height: 8em;
+    margin-bottom: 1em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(43, 63, 74);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
